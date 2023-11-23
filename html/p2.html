@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S4 TYPE TEST</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/p3.css">
+    <link rel="stylesheet" href="../css/searchmodal.css">
+</head>
+<body>
+    <div id="wrap">
+        <section class="main" id="title">
+            <a href="../index.html"><img src="../img/back.png" alt="뒤로가기 아이콘"></a>
+            <h2>1 <span>/ 5</span></h2>
+            <h1>당신의 불호를<br>
+            알려주세요</h1>
+            <div id="text">
+                <div>
+                    <h2>육류</h2>
+                    <p>사람들의 호불호가 많이 갈리는 육류</p>    
+                </div>
+                <div class="custom-checkbox">
+                    <input type="checkbox" class="check" id="check" name="check" />
+                    <label for="check">전체 선택</label>    
+                </div>    
+            </div>
+        </section>
+        <section class="main" id="select">
+            <article>
+                <ul>
+                    <li>
+                        <img src="../img/p2/m-1.png" alt="소 아이콘">
+                        <p>소</p>
+                    </li>
+                    <li>
+                        <img src="../img/p2/m-2.png" alt="돼지 아이콘">
+                        <p>돼지</p>
+                    </li>
+                    <li>
+                        <img src="../img/p2/m-3.png" alt="닭 아이콘">
+                        <p>닭</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img src="../img/p2/m-4.png" alt="오리 아이콘">
+                        <p>오리</p>
+                    </li>
+                    <li>
+                        <img src="../img/p2/m-5.png" alt="양 아이콘">
+                        <p>양</p>
+                    </li>
+                    <li id="modal-li">
+                        <button type="button" id="open-modal-button">
+                            <img src="../img/etc.png" alt="그 외 아이콘">
+                        </button>
+                        <p>그 외</p>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section id="popup-modal">
+            <div class="main">
+                <span></span>
+                <ul></ul>
+                <button type="button" onclick="location.href='./p3.html'">다음으로</button>
+            </div>
+        </section>
+    </div>
+
+
+
+    <div id="modal">
+        <div class="back_barntext">
+            <button id="close-button" type="button"><img src="../img/back.png" width="15"> </button>
+            <p>육류</p>
+        </div>
+        <div class="searchBox">
+            <label> 
+                <input type="text" id="search" onkeyup="filter()" placeholder="식재료를 검색해주세요. ">
+                <img src="../img/search.png" alt="검색 아이콘">
+            </label>
+        </div>
+        <div class="listBox">
+            <div class="listInner">
+                <span class="foodname">곰</span>
+                <input type="checkbox" id="check1" name="check">
+            </div>
+            <div class="listInner">
+                <span class="foodname">낙타</span>
+                <input type="checkbox" id="check2" name="check">
+            </div>
+            <div class="listInner">
+                <span class="foodname">다람쥐</span>
+                <input type="checkbox" id="check3" name="check">
+            </div>
+            <div class="listInner">
+                <span class="foodname">말</span>
+                <input type="checkbox" id="check4" name="check">
+            </div>
+            <div class="listInner">
+                <span class="foodname">물소</span>
+                <input type="checkbox" id="check5" name="check">
+            </div>
+            <div class="listInner">
+                <span class="foodname">베이컨</span>
+                <input type="checkbox" id="check6" name="check">
+            </div>
+            <div class="listInner">
+                <span class="foodname">사슴</span>
+                <input type="checkbox" id="check7" name="check">
+            </div>
+            <div class="listInner">
+                <span class="foodname">송아지</span>
+                <input type="checkbox" id="check8" name="check">
+            </div>
+            <div class="listInner">
+                <span class="foodname">소세지</span>
+                <input type="checkbox" id="check9" name="check">
+            </div>
+            <div class="listInner">
+                <span class="foodname">소시지</span>
+                <input type="checkbox" id="check10" name="check">
+            </div>
+            <div class="listInner">
+                <span class="foodname">미트</span>
+                <input type="checkbox" id="check11" name="check">
+            </div>
+            <div class="listInner">
+                <span class="foodname">칠면조</span>
+                <input type="checkbox" id="check12" name="check">
+            </div>
+            <div class="listInner">
+                <span class="foodname">토끼</span>
+                <input type="checkbox" id="check13" name="check">
+            </div>
+            <div class="listInner">
+                <span class="foodname">햄</span>
+                <input type="checkbox" id="check14" name="check">
+            </div>
+            
+
+            <section id="popup-modal2">
+                <div class="main">
+                    <span></span>
+                    <ul></ul>
+                    <button type="button" onclick="location.href='./p3.html'">다음으로</button>
+                </div>
+            </section>
+    
+        </div>
+
+
+
+
+    <script src="../js/p2.js"></script>
+</body>
+</html>
